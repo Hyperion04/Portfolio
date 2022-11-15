@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <!-- Metadatos -->
+  <meta charset='utf-8'>
+  <meta name='author' content='Elias Wysocki'>
+  <meta name='description' content='Portafolio de desarrollo web de Elias Wysocki'>
+  <meta name='keywords' content='HTML, CSS, JavaScript, React'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- Titulo -->
+  <title>Elias Wysocki | Desarrollo Web Front-End</title>
+  <!-- Favicon -->
+  <link rel='icon' type='image/x-icon' href='images/icon.png'>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href='stylesheets.css' rel='stylesheet'>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src='images/icon-white.svg' alt='Logo de la página web'>
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about-me">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class='hero align-items-stretch' id='hero'>
+    <div class='hero-principal d-flex flex-column justify-content-center align-items-center'>
+      <img src='images/Elias-Wysocki.JPG' alt='Foto de Elias Wysocki' class='photo rounded-circle'>
+      <h1>Hola, soy Elias Wysocki</h1>
+      <h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>
+    </div>
+    <div class='hero-inferior'>
+      <img class='hero-inferior-img img-fluid' src='images/hero-inferior.svg'
+        alt='Monitor, laptop y logos de HTML, CSS, JavaScript y React'>
+    </div>
+  </section>
+
+  <!-- Sobre mi -->
+  <section class='sobre-mi seccion-oscura' id='about-me'>
+    <div class='contenedor'>
+      <h2 class='seccion-titulo texto-blanco'>Conoce a Elias Wysocki</h2>
+      <p class='texto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium metus eget mauris
+        sagittis sollicitudin. Maecenas mattis nisl eget nibh tincidunt, at malesuada lorem scelerisque. Nulla quis
+        fermentum felis, nec congue felis. Nullam sed quam enim. Suspendisse potenti. Integer commodo ligula vel
+        efficitur malesuada. Ut sed sagittis sem.</p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class='experiencia seccion-clara'>
+    <div class='container text-center'>
+      <div class='row'>
+        <!-- Desarrollo Web -->
+        <div class='columna col-12 col-lg-4'>
+          <i class="bi bi-laptop"></i>
+          <p class='experiencia-titulo'>Desarrollo Web</p>
+          <p class='texto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum nulla a malesuada ultrices. Vivamus at eleifend orci. Nulla pretium, sem quis posuere lacinia, orci ligula pharetra metus, in rutrum.</p>
+          <div class='badges-contenedor'>
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">React</span>
+          </div>
+        </div>
+        <!-- Articulos -->
+        <div class='columna col-12 col-lg-4'>
+          <i class="bi bi-journal-code"></i>
+          <p class='experiencia-titulo'>Articulos</p>
+          <p class='texto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum nulla a malesuada ultrices. Vivamus at eleifend orci. Nulla pretium, sem quis posuere lacinia, orci ligula pharetra metus, in rutrum.</p>
+          <div class='badges-contenedor'>
+            <span class="badge text-bg-primary">Escribir</span>
+            <span class="badge text-bg-primary">Editar</span>
+            <span class="badge text-bg-primary">Blogs</span>
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class='columna col-12 col-lg-4'>
+          <i class="bi bi-mortarboard"></i>
+          <p class='experiencia-titulo'>Estudio</p>
+          <p class='texto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum nulla a malesuada ultrices. Vivamus at eleifend orci. Nulla pretium, sem quis posuere lacinia, orci ligula pharetra metus, in rutrum.</p>
+          <div class='badges-contenedor'>
+            <span class="badge text-bg-primary">freeCodeCamp</span>
+            <span class="badge text-bg-primary">Desarrollo Web</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class='proyectos-recientes seccion-clara d-flex flex-column' id='proyects'>
+    <h2 class='seccion-titulo texto-negro'>Mis proyectos</h2>
+    <h3 class='seccion-descripcion'>Estos son algunos proyectos que he creado recientemente...</h3>
+    <!-- Galeria de proyectos -->
+    <div class='container text-center proyectos-contenedor'>
+      <div class='row'>
+        <!-- Proyecto 1 -->
+        <div class='col-12 col-md-6 col-lg-4'>
+          <div class='proyecto'>
+            <img src='images/proyecto1.png' alt='Proyecto 1'>
+            <div class='overlay'>
+              <p>Drum Machine</p>
+              <div class='iconos-contenedor'>
+                <a href='https://github.com/Hyperion04/Drum-Machine.git' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href='https://www.freecodecamp.org/learn' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class='col-12 col-md-6 col-lg-4'>
+          <div class='proyecto'>
+            <img src='images/proyecto2.png' alt='Proyecto 1'>
+            <div class='overlay'>
+              <p>Random Quote Machine</p>
+              <div class='iconos-contenedor'>
+                <a href='https://github.com/Hyperion04/Random-Quote-Machine.git' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href='https://www.freecodecamp.org/learn' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class='col-12 col-md-6 col-lg-4'>
+          <div class='proyecto'>
+            <img src='images/proyecto3.png' alt='Proyecto 1'>
+            <div class='overlay'>
+              <p>Markdow Previewer</p>
+              <div class='iconos-contenedor'>
+                <a href='https://github.com/Hyperion04/Markdown-Previewer.git' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href='https://www.freecodecamp.org/learn' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class='col-12 col-md-6 col-lg-4'>
+          <div class='proyecto'>
+            <img src='images/proyecto4.png' alt='Proyecto 1'>
+            <div class='overlay'>
+              <p>Calculadora</p>
+              <div class='iconos-contenedor'>
+                <a href='https://github.com/Hyperion04/Calculadora-freeCodeCamp.git' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href='https://www.freecodecamp.org/learn' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class='col-12 col-md-6 col-lg-4'>
+          <div class='proyecto'>
+            <img src='images/proyecto5.png' alt='Proyecto 1'>
+            <div class='overlay'>
+              <p>App React Tareas</p>
+              <div class='iconos-contenedor'>
+                <a href='https://github.com/Hyperion04/App-React-Tareas.git' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href='https://www.freecodecamp.org/learn' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class='col-12 col-md-6 col-lg-4'>
+          <div class='proyecto'>
+            <img src='images/proyecto6.png' alt='Proyecto 1'>
+            <div class='overlay'>
+              <p>Contador de clicks</p>
+              <div class='iconos-contenedor'>
+                <a href='https://github.com/Hyperion04/Contador-de-clicks.git' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href='https://www.freecodecamp.org/learn' target='_blank' rel='noopener noreferrer'>
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href='https://github.com/Hyperion04' target='_blank' rel='noopener noreferrer'>
+      <button type="button" class="btn btn-outline-primary">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Articulos -->
+  <section class='articulos justify-content-start'>
+    <h2 class='seccion-titulo texto-negro'>Artículos</h2>
+    <div class="card">
+      <div class="card-header">
+        Más recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href='https://www.freecodecamp.org/espanol/news' target='_blank' rel='noopener noreferrer'>
+          <li class="list-group-item">
+            El decorador @property en Python - Cómo usarlo, ventajas y sintaxis
+          </li>
+        </a>
+        <a href='https://www.freecodecamp.org/espanol/news' target='_blank' rel='noopener noreferrer'>
+          <li class="list-group-item">
+            Python tutorial ciclos while - while True ejemplos de sintaxis y ciclos infinitos
+          </li>
+        </a>
+        <a href='https://www.freecodecamp.org/espanol/news' target='_blank' rel='noopener noreferrer'>
+          <li class="list-group-item">
+            Python leer archivo JSON - Cómo cargar JSON desde un archivo y procesar dumps
+          </li>
+        </a>
+        <a href='https://www.freecodecamp.org/espanol/news' target='_blank' rel='noopener noreferrer'>
+          <li class="list-group-item">
+            Python cómo escribir en un archivo - abrir, leer, escribir y otras funciones de archivos explicadas
+          </li>
+        </a>
+        <a href='https://www.freecodecamp.org/espanol/news' target='_blank' rel='noopener noreferrer'>
+          <li class="list-group-item">
+            ¿Para que se usa Python? 10+ usos del lenguaje de programación Python
+          </li>
+        </a>
+      </ul>
+    </div>
+    <a href='https://www.freecodecamp.org/espanol/news' target='_blank' rel='noopener noreferrer'>
+      <button type="button" class="btn btn-outline-primary">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Testimonios -->
+  <section class='testimonios seccion-clara' id='testimonials'>
+    <h2 class='seccion-titulo'>Testimonios</h2>
+    <h3 class='seccion-descripcion'>Estos son algunos testimonios de mis clientes...</h3>
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class='container'>
+            <img class='testimonio-img rounded-circle' src='images/cliente1.svg' alt='Foto de Gino'>
+            <p class='testimonio-texto'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a auctor sem. Phasellus at leo sit amet leo bibendum tristique. Curabitur ac malesuada risus. Sed molestie venenatis purus in fringilla.
+            </p>
+            <div class='testimonio-info'>  
+              <p class='cliente'>Gino</p>
+              <p class='cargo'>Gerente de proyectos en DesarrolloWeb</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class='container'>
+            <img class='testimonio-img rounded-circle' src='images/cliente2.svg' alt='Foto de Nora'>
+            <p class='testimonio-texto'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a auctor sem. Phasellus at leo sit amet leo bibendum tristique. Curabitur ac malesuada risus. Sed molestie venenatis purus in fringilla.
+            </p>
+            <div class='testimonio-info'>  
+              <p class='cliente'>Nora</p>
+              <p class='cargo'>Gerente de DiseñaMiPaginaWeb</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class='container'>
+            <img class='testimonio-img rounded-circle' src='images/cliente3.svg' alt='Foto de Leonardo'>
+            <p class='testimonio-texto'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a auctor sem. Phasellus at leo sit amet leo bibendum tristique. Curabitur ac malesuada risus. Sed molestie venenatis purus in fringilla.
+            </p>
+            <div class='testimonio-info'>  
+              <p class='cliente'>Leonardo</p>
+              <p class='cargo'>Director de AprendeAProgramar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class='contacto seccion-oscura' id='contacts'>
+    <div class='container'>
+      <div class='container text-center d-flex justify-content-evenly rect'>
+        <div class='row'>
+          <div class='col-12 col-md-4 seccion-titulo'>
+            ¡Hablemos!
+          </div>
+          <div class='col-12 col-md-4 descripcion'>
+            Contactame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+          </div>
+          <div class='col-12 col-md-4'>
+            <a href='mailto: eliasmanca20@gmail.com'>
+              <button type='button'>
+                Contacto
+                <i class="bi bi-envelope-at-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class='seccion-oscura d-flex flex-column align-items-center justify-content-center'>
+    <img class='footer-logo' src='images/icon-white.svg' alt='Logo del portafolio'>
+    <p class='footer-text text-center'>Aprendo y creo todos los días-<br>Creemos un proyecto juntos.</p>
+    <div class='iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center'>
+      <a href='https://twitter.com/HeisenbergdelaT' target='_blank' rel='noopener noreferrer'>
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href='https://github.com/Hyperion04?tab=repositories' target='_blank' rel='noopener noreferrer'>
+        <i class="bi bi-github"></i>
+      </a>
+      <a href='https://www.linkedin.com/in/elias-lautaro-manca-wysocki-435a71245/' target='_blank' rel='noopener noreferrer'>
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href='https://www.instagram.com/eliasmwysocki/' target='_blank' rel='noopener noreferrer'>
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href='mailto: eliasmanca20@gmail.com' target='_blank' rel='noopener noreferrer'>
+        <i class="bi bi-envelope-at"></i>
+      </a>
+    </div>
+    <div class='derechos-de-autor'>Creado por Elias Wysocki (2022) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
